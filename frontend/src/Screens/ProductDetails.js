@@ -1,6 +1,7 @@
 import React from 'react'
 
-function ProductDetails() {
+const ProductDetails = (props) => {
+  console.log(props.match.params.id)
   return (
     <div>
       Product Details Page

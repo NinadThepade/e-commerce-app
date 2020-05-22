@@ -15,34 +15,34 @@ function App() {
   }
   return (
     <BrowserRouter>
-      <div class="grid-container">
-        <header class="header">
-          <div class="brand">
+      <div className="grid-container">
+        <header className="header">
+          <div className="brand">
             <button onClick={openSideMenu}>
               &#9776;
           </button>
             <Link to='/'></Link>
           </div>
-          <div class="header-links">
+          <div className="header-links">
             <a href="cart.html">Cart</a>
             <a href="signin.html">Sign In</a>
           </div>
         </header>
-        <aside class="sidebar">
+        <aside className="sidebar">
           <h3>Categories</h3>
-          <button class="sidebar-close-button" onClick={closeSideMenu}>x</button>
+          <button className="sidebar-close-button" onClick={closeSideMenu}>x</button>
           <ul>
             <li><a href="index.html">Men</a></li>
             <li><a href="index.html">Women</a></li>
           </ul>
         </aside>
-        <main class="main">
-          <div class="content">
+        <main className="main">
+          <div className="content">
             <Route path="/" exact component={Home}></Route>
             <Route path="/product/:id" component={ProductDetails}></Route>
           </div>
         </main>
-        <footer class="footer">
+        <footer className="footer">
           Footer Here
         </footer>
       </div>
