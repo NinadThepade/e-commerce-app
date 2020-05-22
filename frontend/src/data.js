@@ -8,7 +8,9 @@ export default {
       brand: 'Zodiac',
       price: 500,
       rating: 4.2,
-      reviewCount: 10
+      reviewCount: 10,
+      description: 'Some Product',
+      availability: 'Available'
     }
   ]
 }

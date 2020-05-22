@@ -1,8 +1,8 @@
 import React from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom'
 
-import Home from './Screens/Home'
-import ProductDetails from './Screens/ProductDetails'
+import Home from './Screens/Home/Home'
+import ProductDetails from './Screens/ProductDetails/ProductDetails'
 
 import './App.css';
 
@@ -21,7 +21,7 @@ function App() {
             <button onClick={openSideMenu}>
               &#9776;
           </button>
-            <Link to='/'></Link>
+            <Link to='/'>Digi Shop</Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
